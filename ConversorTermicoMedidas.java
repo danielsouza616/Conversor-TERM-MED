@@ -48,6 +48,6 @@ public class ConversorTermicoMedidas {
 			condicao = sc.next(); 
 			System.out.println("##### PROGRAMA ENCERRADO ##### ");
 		}
-		
+	          sc.close();
 	}
 }
