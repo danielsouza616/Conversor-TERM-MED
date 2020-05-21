@@ -7,15 +7,15 @@ public class ConversorTermicoMedidas {
 		int menu = 0;
 		String condicao = "S";
 
-		//laÁo de repetiÁ„o
+		//la√ßo de repeti√ß√£o
 		while(condicao.equalsIgnoreCase("S")) {
-			// menu de exibiÁ„o
+			// menu de exibi√ß√£o
 			System.out.println("Bem-Vindo ao Conversor: ");
 			System.out.println("[1] Celsius -> Fahrenheit");
 			System.out.println("[2] Fahrenheit -> Celsius");
-			System.out.println("[3] MilÌmetros -> Polegadas");
-			System.out.println("[4] Polegadas -> MilÌmetros");
-			System.out.println("Informe a opÁ„o desejada: ");
+			System.out.println("[3] Mil√≠metros -> Polegadas");
+			System.out.println("[4] Polegadas -> Mil√≠metros");
+			System.out.println("Informe a op√ß√£o desejada: ");
 			menu = sc.nextInt();
 			//menu de escolhas
 			switch (menu) {
@@ -23,31 +23,31 @@ public class ConversorTermicoMedidas {
 				System.out.println("Informe a temperatura em Celsius: ");
 				celsius = sc.nextDouble();
 				celsius = (celsius * 9/5) + 32;
-				System.out.println("A memida convertida È: " + celsius + " fahrehit");
+				System.out.println("A memida convertida √©: " + celsius + " fahrehit");
 				break; 
 			case 2: //  converter Fahrenheit -> Celsius
 				System.out.println("Informe a temperatura em Farehit: ");
 				fahrehit = sc.nextDouble();
 				fahrehit = (fahrehit -32) *5/9;
-				System.out.println("A memida convertida È: " + fahrehit + " celsius");
+				System.out.println("A memida convertida √©: " + fahrehit + " celsius");
 				break;
-			case 3:  //converter MilÌmetros -> Polegadas
-				System.out.println("Informe quantos milÌmetros: ");
+			case 3:  //converter Mil√≠metros -> Polegadas
+				System.out.println("Informe quantos mil√≠metros: ");
 				milimetros = sc.nextDouble();
 				milimetros = (milimetros / 25.4);
-				System.out.println("A medida convertida È: " + milimetros + " polegadas");
+				System.out.println("A medida convertida √©: " + milimetros + " polegadas");
 				break;
-			case 4: // converter Polegadas -> MilÌmetro
+			case 4: // converter Polegadas -> Mil√≠metro
 				System.out.println("Informe quantas polegadas: ");
 				polegadas = sc.nextDouble();
 				polegadas = (polegadas * 25.4);
-				System.out.println("A medida convertida È: " + polegadas + " milÌmetros");
+				System.out.println("A medida convertida √©: " + polegadas + " mil√≠metros");
 				break;
 			}
 			System.out.println("Deseja continuar [S] ou [N]? ");
 			condicao = sc.next(); 
 			System.out.println("##### PROGRAMA ENCERRADO ##### ");
 		}
-		sc.close();
+		
 	}
 }
